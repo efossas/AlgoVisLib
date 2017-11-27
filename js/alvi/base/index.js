@@ -31,10 +31,10 @@ Alvi.Array2D = {
 
 Alvi.Array1D = {
   random: (N, min, max) => {
-    return Array2D.random(1, N, min, max)[0];
+    return Alvi.Array2D.random(1, N, min, max)[0];
   },
   randomSorted: (N, min, max)=> {
-    return Array2D.randomSorted(1, N, min, max)[0];
+    return Alvi.Array2D.randomSorted(1, N, min, max)[0];
   }
 };
 

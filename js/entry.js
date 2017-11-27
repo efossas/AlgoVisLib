@@ -13,10 +13,6 @@
     // used for the code editor
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ext-language_tools.js"></script>
     
-    // Babel -> Babel	
-    // used to convert user code to ecmascript5
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-    
     // Sigmajs -> sigma
     // used for Graph tracers
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
