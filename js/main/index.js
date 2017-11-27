@@ -262,7 +262,7 @@ function AVEditor(tracerManager,topMenu) {
       lines.forEach((line, i) => {
         newLines.push(line.replace(/(.+\. *_wait *)(\( *\))/g, `$1(${i - dataLines})`));
       });
-      eval(Babel.transform(newLines.join('\n'), {presets: ['es2015']}).code);
+      eval(newLines.join('\n')); // removed Babel
       tracerManager.visualize();
     } catch (err) {
       return err;
