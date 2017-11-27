@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/algorithm_visualizer.css">
+</head>
+
+<body>
+
+<div class="av-all">
+  <div class="av-workspace">
+      <div class="av-viewer_container">
+          <section class="av-tab_container">
+              <div class="av-tab av-module_container av-active" id="ENGINEID-tab_module">
+              </div>
+          </section>
+      </div>
+      <div class="av-editor_container">
+          <section class="av-code_container">
+              <pre id="code"></pre>
+          </section>
+      </div>
+  </div>
+  <nav>
+      <div id="ENGINEID-top-menu-buttons" class="av-top-menu-buttons">
+          <button id="ENGINEID-btn_run" class="av-btn_run">
+              <i class="fa fa-play" aria-hidden="true"></i>
+              <span class="av-btn-text"></span>
+          </button>
+          <button id="ENGINEID-btn_prev" class="av-btn_prev">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              <span class="av-btn-text">Prev</span>
+          </button>
+          <button id="ENGINEID-btn_pause" class="av-btn_pause">
+              <i class="fa fa-pause" aria-hidden="true"></i>
+              <span class="av-btn-text"></span>
+          </button>
+          <button id="ENGINEID-btn_next" class="av-btn_next">
+              <span class="av-btn-text">Next</span>
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </button>
+          <div class="av-btn">
+              <div class="av-wrapper">
+                  Interval: <input type="number" value="" id="ENGINEID-interval" class="av-interval"> sec
+              </div>
+          </div>
+      </div>
+  </nav>
+</div>
+  
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ext-language_tools.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
+  <script src="https://cdn.rawgit.com/jacomyal/sigma.js/master/plugins/sigma.plugins.dragNodes/sigma.plugins.dragNodes.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="js/algovisualizer-lib.js"></script>
+  <script>
+	  window.Algo = new AlgoVisualizer('ENGINEID');
+  </script>
+  
+</body>
+
+</html>
