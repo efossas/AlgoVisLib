@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/algorithm_visualizer.css">
+    <style>
+	    body {
+			margin: 0;
+			padding: 0;
+		}	
+	</style>
 </head>
 
 <body>
@@ -26,31 +32,31 @@
           </section>
       </div>
   </div>
-  <nav>
-      <div id="ENGINEID-top-menu-buttons" class="av-top-menu-buttons">
-          <button id="ENGINEID-btn_run" class="av-btn_run">
+  <nav><!--
+      --><div id="ENGINEID-top-menu-buttons" class="av-top-menu-buttons"><!--
+          --><button id="ENGINEID-btn_run" class="av-btn_run">
               <i class="fa fa-play" aria-hidden="true"></i>
               <span class="av-btn-text"></span>
-          </button>
-          <button id="ENGINEID-btn_prev" class="av-btn_prev">
+          </button><!--
+          --><button id="ENGINEID-btn_prev" class="av-btn_prev">
               <i class="fa fa-chevron-left" aria-hidden="true"></i>
               <span class="av-btn-text">Prev</span>
-          </button>
-          <button id="ENGINEID-btn_pause" class="av-btn_pause">
+          </button><!--
+          --><button id="ENGINEID-btn_pause" class="av-btn_pause">
               <i class="fa fa-pause" aria-hidden="true"></i>
               <span class="av-btn-text"></span>
-          </button>
-          <button id="ENGINEID-btn_next" class="av-btn_next">
+          </button><!--
+          --><button id="ENGINEID-btn_next" class="av-btn_next">
               <span class="av-btn-text">Next</span>
               <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </button>
-          <div class="av-btn">
+          </button><!--
+          --><div class="av-btn-input">
               <div class="av-wrapper">
-                  Interval: <input type="number" value="" id="ENGINEID-interval" class="av-interval"> sec
+                  <input type="number" value="" id="ENGINEID-interval" class="av-interval">
               </div>
-          </div>
-      </div>
-  </nav>
+          </div><!--
+      --></div><!--
+  --></nav>
 </div>
   
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
@@ -62,6 +68,7 @@
   <script src="js/algovisualizer-lib.js"></script>
   <script>
 	  window.Algo = new AlgoVisualizer('ENGINEID');
+	  window.AVTM = Algo.state.tracerManager // convenient shortcut for passing tracerManager to Tracer constructors
   </script>
   
 </body>
