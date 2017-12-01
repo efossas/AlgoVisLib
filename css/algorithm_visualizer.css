@@ -129,8 +129,7 @@
     padding: 4px 20px;
 }
 
-.av-btn:hover,
-button:hover {
+.av-btn:hover, {
     background: rgba(0, 0, 0, .15);
 }
 
